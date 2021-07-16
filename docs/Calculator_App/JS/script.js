@@ -157,8 +157,8 @@ function clickEqual() {
 
 // This function is to create button sound
 function buttonClickSound() {
-    const audio = new Audio();
-    audio.src = "/Audio/click-sound.mp3"
+    var audio = new Audio("/Audio/click-sound.mp3");
+    // audio.src = "/Audio/click-sound.mp3"
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function () {
             audio.play();
